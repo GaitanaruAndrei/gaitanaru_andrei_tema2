@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+<RelativeLayout
+    android:background="@android:color/darker_gray"
+    android:id="@+id/rel1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <EditText
+        android:hint="Nume si prenume"
+        android:id="@+id/edit1"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content">
+
+    </EditText>
+
+    <EditText
+        android:hint="Nota"
+        android:id="@+id/edit2"
+        android:layout_below="@id/edit1"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content">
+
+    </EditText>
+    <Button
+        android:text="Adauga"
+        android:layout_below="@id/edit2"
+        android:id="@+id/adauga"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </Button>
+    <Button
+        android:id="@+id/sterg"
+        android:text="Sterge"
+        android:layout_toRightOf="@id/adauga"
+        android:layout_below="@id/edit2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </Button>
+
+</RelativeLayout>
+   <androidx.recyclerview.widget.RecyclerView
+       android:scrollbars="vertical"
+       android:id="@+id/recycler"
+       android:layout_marginTop="50dp"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:layout_below="@id/rel1">
+
+   </androidx.recyclerview.widget.RecyclerView>
+
+</RelativeLayout>
